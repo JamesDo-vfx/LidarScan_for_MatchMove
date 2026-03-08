@@ -5,11 +5,11 @@ from . import methods
 
 # --- 1. UI PANEL ---
 class VIEW3D_PT_MM_Multicam_Final(bpy.types.Panel):
-    bl_label = "JamesDo's Scan Aligner"
+    bl_label = "LiDAR Prep Tool"
     bl_idname = "VIEW3D_PT_mm_multicam_final"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = 'LidarScan for MatchMove'
+    bl_category = 'LiDAR Prep Tool'
 
     # Internal function to wrap text (auto line break) 🌷
     def draw_help_text(self, layout, text, icon='NONE'):
@@ -45,7 +45,8 @@ class VIEW3D_PT_MM_Multicam_Final(bpy.types.Panel):
 
         note_col = col.column(align=True)
         note_col.scale_y = 0.8
-        self.draw_help_text(note_col, "Set Origin -> Cursor 0 -> Snap Obj -> Apply All.", icon='LIGHT')
+        self.draw_help_text(note_col, "Identify a common point on both scans, set Object 2's origin to that point, then snap it to the 3D cursor placed on Object 1's corresponding point.")
+        self.draw_help_text(note_col, "Set Origin -> Cursor -> Snap Obj -> Apply All.", icon='LIGHT')
 
         col.separator()
         # Set Pivot to Cursor

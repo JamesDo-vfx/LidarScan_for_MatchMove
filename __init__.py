@@ -1,9 +1,9 @@
 bl_info = {
-    "name": "LidarScan for MatchMove",
+    "name": "LiDAR Prep Tool",
     "author": "JamesDo",
     "version": (1 , 0),
     "blender": (4, 5, 0),
-    "location": "View3D > Sidebar > James Tools",
+    "location": "View3D > Sidebar > LiDAR Prep Tool",
     "description": "Specially designed for aligning and synchronizing raw 3D scans before importing them into MatchMove software",
     "category": "Import-Export",
 }

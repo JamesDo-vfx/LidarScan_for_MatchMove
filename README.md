@@ -1,8 +1,3 @@
-Chào bạn, mình rất hiểu ý bạn rồi! Bạn muốn một bản tài liệu hướng dẫn (README) chuyên nghiệp, đầy đủ các biểu tượng (badges), bảng biểu và cấu trúc phân mục rõ ràng để đưa lên GitHub cho addon **JamesDo's Scan Aligner** này đúng không? 🌷✨
-
-Dưới đây là bản thảo mẫu được thiết kế chuẩn theo phong cách bạn yêu cầu, vừa ấm áp vừa đầy đủ kỹ thuật nhé:
-
----
 
 # 🛸 JamesDo's Scan Aligner — LiDAR Prep Tool
 
@@ -58,9 +53,10 @@ Công cụ được thiết kế để sử dụng từ trên xuống dưới th
 
 Để phần mềm Matchmove hiểu được không gian, bạn cần làm sạch dữ liệu:
 
-1. Sử dụng **Cursor to World Origin** để đảm bảo 3D Cursor nằm tại $(0,0,0)$.
-2. Chọn Mesh và dùng **Origin to 3D Cursor** để đặt tâm cho bản scan.
-3. Nhấn **Apply All Transforms** để "khóa" vị trí này lại (Tránh bị nhảy tọa độ khi xuất).
+1. Find a matching feature on both scans.
+2. **Set Origin to Cursor** at that point for the source object.
+3. Place the **3D Cursor** on the same point of the target object.
+4. Use **Selection to Cursor** to snap them together perfectly. ✨
 
 ### Bước 3: Export Aligned Model
 
